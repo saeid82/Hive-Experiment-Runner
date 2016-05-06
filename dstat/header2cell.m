@@ -19,7 +19,7 @@ function headerArr = header2cell(filename)
 %IMPORTFILE1 Import text data from a text file as a matrix.
 
 % Example:
-%   stats1 = importfile1('stats.master1.csv');
+%   headerArr = header2cell('stats.master1.csv');
 
 
 %% Initialize variables.
