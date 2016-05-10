@@ -76,7 +76,8 @@ function stats_struct = csv2struct(filename)
         if i ~= 1   
             stats_struct.(header) = data{i};
         else
-            data{i} = datenum(data{i}, 'dd-MM HH:mm:ss');
+%           data{i} = datenum(data{i}, 'dd-MM HH:mm:ss');
+            data{i} = datetime(data{i},'InputFormat','dd-MM HH:mm:ss')
 %           data{i} = cell2struct(data{i}, 'time' ,2);
 %           data{i} = todatenum(data{i});  
             stats_struct.(header) = data{i};
